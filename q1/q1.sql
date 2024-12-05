@@ -39,6 +39,12 @@ COMMIT;
 INSERT INTO `employeesalary`(`empid`, `project`, `salary`, `variable`) 
 VALUES ('444','JNVU',40000,20000)
 
+UPDATE `employeedetails` SET `FullName` = 'jignesh' WHERE `employeedetails`.`empid` = 111;
+UPDATE `employeedetails` SET `FullName` = 'lakshya' WHERE `employeedetails`.`empid` = 222;
+SELECT * FROM `shop`.`employeedetails` WHERE `empid` = 444;
+  UPDATE `employeedetails` SET `FullName` = 'jayesh' WHERE `employeedetails`.`empid` = 444;
+
+
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
