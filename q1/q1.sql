@@ -44,6 +44,13 @@ UPDATE `employeedetails` SET `FullName` = 'lakshya' WHERE `employeedetails`.`emp
 SELECT * FROM `shop`.`employeedetails` WHERE `empid` = 444;
   UPDATE `employeedetails` SET `FullName` = 'jayesh' WHERE `employeedetails`.`empid` = 444;
 
+UPDATE `employeedetails` SET `empid`='111',`FullName`='harshvardhan',`ManagerID`='1212',`DOJ`='2020-02-20',`city`='udaipur' WHERE city = 'udaipur';
+UPDATE `employeedetails` SET `empid`='111',`FullName`='Khushveer',`ManagerID`='1212',`DOJ`='2020-02-20',`city`='jodhpur' WHERE city = 'udaipur';
+
+DELETE FROM `employeedetails` WHERE 'jodhpur';
+SELECT * FROM `employeedetails` WHERE city = 'jaipur';
+DELETE FROM `employeedetails` WHERE empid = 111;
+
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
